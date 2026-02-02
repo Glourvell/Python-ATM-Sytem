@@ -18,6 +18,11 @@ def menu():
              withdrawal_amount = int(input())
              new_balance = Balance - withdrawal_amount
              print(f"You have successfuly withdrawn Ksh: {withdrawal_amount}, your new amount is Ksh: {new_balance}")
+        elif user_choice == 3:
+             print("How much money do you want to deposit: ")
+             deposit = int(input())
+             new_balance = Balance + deposit
+             print(f"You have succesfully deposited Ksh: {deposit}, your new balance is Ksh: {new_balance}")
              
             
 
