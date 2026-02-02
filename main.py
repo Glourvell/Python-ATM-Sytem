@@ -23,6 +23,16 @@ def menu():
              deposit = int(input())
              new_balance = Balance + deposit
              print(f"You have succesfully deposited Ksh: {deposit}, your new balance is Ksh: {new_balance}")
+        elif user_choice == 4:
+             print("Please enter the new PIN you would like to add :")
+             new_pin = int(input())
+             print("Please repeat the PIN again for confirmation")
+             confirmation_pin = int(input())
+             if new_pin == confirmation_pin:
+                  print("PIN succesfully changed")
+             else:
+                  print("You PIN doesn't match")
+
              
             
 
